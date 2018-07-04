@@ -1,0 +1,20 @@
+Questions
+
+1. The sort command sorts the input and then outputs it. The wc command outputs the
+number of newlines, words, and bytes. The uniq commands gets rid of any duplicate lines
+and then returns the result.
+
+2. The commad I used was "sort commands.js | uniq | wc". This command sorted the data,
+in commands.js, then it removed any adjacent duplicates, and lastly it returned the
+number of newlines, words, and bytes.
+
+6. Reverse String Challenge
+
+function reverseString(inputString) {
+  splitString = inputString.split(" ");
+  reSplitString = [];
+  splitString.forEach((word) => {
+    reSplitString.push(word.split('').reverse().join(''));
+  });
+  return reSplitString.join(" ");
+}
